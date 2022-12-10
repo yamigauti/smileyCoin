@@ -157,6 +157,7 @@ extern json_spirit::Value getbooklist(const json_spirit::Array& params, bool fHe
 extern json_spirit::Value getaddressinfo(const json_spirit::Array& params, bool fHelp); //in rpcmisc.cpp
 extern json_spirit::Value replywithmessage(const json_spirit::Array& params, bool fHelp);
 extern json_spirit::Value getmessages(const json_spirit::Array& params, bool fHelp);
+extern json_spirit::Value oddsgame(const json_spirit::Array& params, bool fHelp);
 extern json_spirit::Value getgenerate(const json_spirit::Array& params, bool fHelp); // in rpcmining.cpp
 extern json_spirit::Value setgenerate(const json_spirit::Array& params, bool fHelp);
 extern json_spirit::Value getnetworkhashps(const json_spirit::Array& params, bool fHelp);

@@ -227,6 +227,7 @@ static const CRPCCommand vRPCCommands[] =
     { "getinfo",                &getinfo,                true,      false,      false }, /* uses wallet if enabled */
     { "help",                   &help,                   true,      true,       false },
     { "stop",                   &stop,                   true,      true,       false },
+    { "oddsgame",               &oddsgame,               false,     false,      false },
 
     /* P2P networking */
     { "getnetworkinfo",         &getnetworkinfo,         true,      false,      false },

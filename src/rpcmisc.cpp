@@ -217,6 +217,29 @@ Value adddex(const Array& params, bool fHelp)
     return wtx.GetHash().GetHex();
 }
 
+
+Value oddsgame(const Array& params, bool fHelp)
+{
+    if (fHelp || params.size() != 1)
+        throw runtime_error(
+            "oddsgame\n"
+            "Returns a number between 1 and the input.\n"
+	        "\n Input: \n"
+	        "\n	\"string\"	(string, required) max value.\n"
+            "\n Result: \n"
+            "\n \"output\" (string) random number between 1 and the input. \n"
+        );
+
+    string odds_input = params[0].get_str();
+    int odds = stoi(odds_input);
+    if (odds < 1)
+    	throw runtime_error(
+	    "input must be greater than 1"
+	);
+    int output = 1 + rand() % odds;
+    return output;
+}
+
 // note that in the code org == npo/NP
 Value addorg(const Array& params, bool fHelp)
 {
